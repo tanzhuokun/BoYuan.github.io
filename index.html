@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--写入会徽-->
+<link rel="shortcut icon"  href="img/by.png"/>
+<title>博源登录页面</title>
+<!--引入自定义样式-->
+<link rel="stylesheet" href="css/style.css">
+<!--引入自定义样式   End-->
+</head>
+<body >
+	<!--导入音乐，预先加载-->
+<audio  autoplay="autoplay" controls style="display: none;">
+  <source src="music/The truth that you leave.mp3" type="audio/ogg">
+</audio>
+	<!--导入音乐，预先加载  End -->
+	
+	<!--头部logo-->
+	<div class="header">
+		<img src="img/ndht.png"/>
+	</div>
+	<!--头部logo  End-->
+	
+	<!--中部登录框-->
+	<div class="form-list">
+		<p>用户登录</p>
+		<hr />
+		<form id="Form" class="form-list-grounp" action="" method="post">
+			<div class="nd-img show-block">
+				<img src="img/nd.png"/>
+			</div>
+			<div class="form-grounp-content">
+				<label class="hidden-block">账号&nbsp;&nbsp;</label>
+				<p class="show-block">
+					输入账号
+				</p>
+			<input type="text" name="账号" placeholder="手机号/电子邮箱/QQ号" required="required"/>
+			</div>
+			<div class="form-grounp-content">
+				<label class="hidden-block">密码&nbsp;&nbsp;</label>
+				<p class="show-block">
+					输入密码
+				</p>
+			<input type="password" name="密码" placeholder="&nbsp;&nbsp;输入密码"  required="required"/>
+			</div>
+			<div class="form-check ">
+				<input type="text" name="验证码" placeholder="&nbsp;&nbsp;验证码" />
+			<img src="img/express.gif"/>
+			</div>
+			<div class="form-checkbox ">
+				<label>记住我&nbsp;<input type="checkbox" value="记住我"/></label>
+			<label>自动登录&nbsp;<input type="checkbox" value="自动登录"/></label>
+			</div>
+			<div class="form-other-option clearfix">
+				<a href="#">忘记密码?</a>
+				<a href="#">账号注册</a>
+			</div>
+			<div class="btn-submit">
+				<input id="btn"  type="submit" value="点击登录"/>
+			</div>
+			
+		</form>
+		<div class="other">
+			<span >
+				第三方登录&nbsp;
+			</span>
+			<div class="other-img">
+				<img src="img/qq.png" alt="QQ"/>
+			<img src="img/sina.png" alt="新浪"/>
+			<img src="img/wechat .png" alt="微信"/>
+			</div>
+			
+		</div>
+	</div>
+	<!--中部登录框  End-->
+	
+	<!--搜索栏-->
+	<div class="search">
+		<a href="http://www.sougou.com">前往搜狗</a>
+		<a href="doc/简介.docx" download="简介.docx">协会说明</a>
+		<!--不用post-->
+		<form class="form-search" action="https://www.baidu.com/s" >
+			<input type="text" name="wd"  placeholder="&nbsp;百度一下，你就知道"/>
+			<input type="submit"  value="百度一下"/>
+		</form>
+	</div>
+	<!--搜索栏-->
+	
+	<!--底部版权-->
+	<div class="footer">
+		&copy;2019&nbsp;&nbsp;云南农业大学&nbsp;&nbsp;博源科技协会版权所有
+	</div>
+	<!--底部版权  End-->
+<script src='js/snowflakes.min.js'></script>
+<script src="js/index.js"></script>
+</body>
+</html>
